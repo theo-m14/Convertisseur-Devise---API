@@ -9,24 +9,26 @@
 </head>
 <body>
     <h1>CONVERTISSEUR DE DEVISE</h1>
-    <form action="_POST">
+    <form action="">
         <label for="baseDevise">Devise à convertir :</label>
         <select name="baseDevise" id="deviseToConvert">
-            <option value="dollar">US Dollar</option>
-            <option value="euro">Euros</option>
-            <option value="roubleRusse">Rouble Russe</option>
-            <option value="yen">Yen</option>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euros</option>
+            <option value="RUB">Rouble Russe</option>
+            <option value="JPY">Yen</option>
         </select>
         <label for="amountOfDevise">Valeur à convertir :</label>
         <input type="number0" name="amountOfDevise" id="numberToConvert">
         <label for="finalDevise">Convertir en :</label>
         <select name="finalDevise" id="deviseResult">
-            <option value="dollar">US Dollar</option>
-            <option value="euro">Euros</option>
-            <option value="roubleRusse">Rouble Russe</option>
-            <option value="yen">Yen</option>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Euros</option>
+            <option value="RUB">Rouble Russe</option>
+            <option value="JPY">Yen</option>
         </select>
-        <input type="button" value="CONVERTIR">
+        <input type="button" value="CONVERTIR" id="convertBtn">
     </form>
+    <p id="result"></p>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
