@@ -9,5 +9,24 @@
 </head>
 <body>
     <h1>CONVERTISSEUR DE DEVISE</h1>
+    <form action="_POST">
+        <label for="baseDevise">Devise à convertir :</label>
+        <select name="baseDevise" id="deviseToConvert">
+            <option value="dollar">US Dollar</option>
+            <option value="euro">Euros</option>
+            <option value="roubleRusse">Rouble Russe</option>
+            <option value="yen">Yen</option>
+        </select>
+        <label for="amountOfDevise">Valeur à convertir :</label>
+        <input type="number0" name="amountOfDevise" id="numberToConvert">
+        <label for="finalDevise">Convertir en :</label>
+        <select name="finalDevise" id="deviseResult">
+            <option value="dollar">US Dollar</option>
+            <option value="euro">Euros</option>
+            <option value="roubleRusse">Rouble Russe</option>
+            <option value="yen">Yen</option>
+        </select>
+        <input type="button" value="CONVERTIR">
+    </form>
 </body>
 </html>
